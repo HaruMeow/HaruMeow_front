@@ -39,7 +39,7 @@
   font-size: 22px;
   align-items: center;
   box-shadow: 3px 3px 3px 1px #7a83a1a1 inset;
-  color:#515c84
+  color:#515c84;
 
 }
 
@@ -53,12 +53,93 @@
   box-shadow: 3px 3px 4px 3px #7a83a1a1;
   margin-top:20px;
   border-radius: 25px;
+  overflow: auto;
 }
-.stamp-pan ul{
-  margin-top: 30px;
+.stamp-pan button{
+  margin-top: 25px;
+  margin-right: 12px;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: rgb(179, 191, 237);
+  color:white;
+  font-size: 17px;
 }
-.stamp-pan li{
-  list-style: none;
+.button-list{
+  margin-left:-15px
+}
+.stamp-pan::-webkit-scrollbar {
+  width: 13px;
+}
+.stamp-pan::-webkit-scrollbar-thumb {
+  background-color: rgb(135, 150, 205);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+}
+.stamp-pan::-webkit-scrollbar-track {
+  background-color: rgba(128, 128, 128, 0);
+}
+.stamp-pan::-webkit-scrollbar-button:vertical:start:decrement,
+.stamp-pan::-webkit-scrollbar-button:vertical:start:increment {
+    display: block;
+    height: 25px;
+}
+.stamp-pan::-webkit-scrollbar-button:vertical:end:decrement {
+  display: block;
+  width: 25px;
+}
+/*stamp content*/
+.stamp-content{
+  width: 370px;
+  height: 350px;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: #CED8F2;
+  box-shadow: 3px 3px 3px 1px #7a83a1a1 inset;
+  margin-top:30px;
+  border-radius: 25px;
+  overflow: auto;
+}
+.stamp-content-svg{
+  background-color: white;
+  box-shadow: 3px 3px 3px 1px #7a83a1a1 inset;
+  width: 370px;
+  padding-left: 300px;
+}
+.stamp-content-svg button{
+  background-color: transparent;
+  border:none;
+}
+.content-btn{
+  margin-top: 15px;
+}
+.content-btn button{
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  width:350px;
+}
+.contentimg img{
+  width:130px;
+  margin-right: 20px;
+  background-color: white;
+  padding:10px;
+  border-radius: 20px 0 0 20px;
+}
+.content{
+  background-color: #A5BAFF;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+.contenttitle{
+  font-size: 23px;
+  margin-top:10px;
+}
+.contentsub{
+  margin-top:-20px;
+  font-size: 15px;
 }
 /*main bar*/
   .main-bar{
