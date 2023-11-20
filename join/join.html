@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,14 +22,17 @@
             <p class="join-sub">뿌듯한 100일을 <br>
             기록해보세요.
         </div>
-        <div class="join-content text-center header-font">
-            <input type="text" id="id" name="id" required placeholder="아이디">
-            <input type="password" id="password" name="password" required placeholder="비밀번호">
-            <input type="text" id="nickname" name="nickname" required placeholder="닉네임">
-        </div>
-    <div class="button-next d-flex justify-content-center header-font">
-        <a href="../tutorial/tutorial1.html"><input type="submit" value="가입"></a>
-    </div>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="join-content text-center header-font">
+                <input type="text" id="id" name="id" required placeholder="아이디">
+                <input type="password" id="password" name="password" required placeholder="비밀번호">
+                <input type="text" id="nickname" name="nickname" required placeholder="닉네임">
+            </div>
+            <div class="button-next d-flex justify-content-center header-font">
+                <a href="../tutorial/tutorial1.html"><input type="submit" value="가입"></a>
+            </div>
+    </form>
     <p class="more text-center content-font">이미 가입을 하셨나요?<a href="index.html"> 여기</a>를 클릭해주세요.</p>
     </div>
 </body>
