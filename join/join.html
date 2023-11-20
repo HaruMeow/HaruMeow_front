@@ -22,11 +22,11 @@
             <p class="join-sub">뿌듯한 100일을 <br>
             기록해보세요.
         </div>
-        <form action="" method="POST" enctype="multipart/form-data">
+        <form method="post" action="{% url 'join' %}">
             {% csrf_token %}
-            <div class="join-content text-center header-font">
+            <div class="join-content text-center">
                 <input type="text" id="id" name="id" required placeholder="아이디">
-                <input type="password" id="password" name="password" required placeholder="비밀번호">
+                <input type="password" id="password" name="password" placeholder="비밀번호">
                 <input type="text" id="nickname" name="nickname" required placeholder="닉네임">
             </div>
             <div class="button-next d-flex justify-content-center header-font">
